@@ -1,0 +1,45 @@
+COLON CANCER OVERALL-SURVIVAL ANALYSIS
+
+1. Dataset
+   Overall survival uses death records only (etype = 2).
+   Patients: 929
+   Deaths: 452
+   Censored observations: 477
+   Median age: 61 years (range 18-85)
+
+2. Kaplan-Meier median survival
+   Observation: 2083 days
+   Levamisole: 2152 days
+   Levamisole + 5-FU: Not reached during observed follow-up
+
+3. Log-rank comparisons
+   Overall treatment comparison p-value: 0.0029
+   Treatment comparison stratified by sex p-value: 0.00278
+
+4. Adjusted Cox model
+   Complete-case patients: 911
+   Excluded for missing model variables: 18
+   Covariates: treatment, age, sex and positive-node count.
+
+   Levamisole + 5-FU versus observation:
+   HR 0.67 (95% CI 0.53-0.85)
+   P-value: 0.00084
+
+   The HR compares the hazard of death, not the probability of dying.
+   Values below 1 indicate a lower estimated hazard than observation.
+
+5. Proportional-hazards assessment
+   Global diagnostic p-value: 0.595
+   The global diagnostic did not detect evidence of non-proportional hazards. This does not prove that the assumption holds; term-specific tests and plots should also be reviewed.
+   See ph_assumption_results.csv and ph_diagnostics.png.
+
+6. Interpretation and limitations
+   Interpret the treatment estimate together with its confidence interval,
+   p-value and model diagnostics. This educational reanalysis uses an
+   existing historical trial dataset.
+
+   The model assumes linear effects of age and positive-node count on
+   the log hazard. Complete-case analysis may introduce selection bias.
+   Exploratory subgroup comparisons do not establish treatment-by-sex
+   interaction and have not been adjusted for multiple testing.
+

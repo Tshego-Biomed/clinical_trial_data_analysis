@@ -1,0 +1,4 @@
+"Group","Median_Survival","Lower_CI","Upper_CI","Median_Interpretation"
+"rx=Obs",2083,1656,2789,"2083 days"
+"rx=Lev",2152,1540,NA,"2152 days"
+"rx=Lev+5FU",NA,2725,NA,"Not reached during observed follow-up"

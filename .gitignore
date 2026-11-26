@@ -1,0 +1,27 @@
+# R History and Workspace
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+*.Rproj
+
+# RStudio files
+.Rproj.user/
+.rproj.user/
+
+# Compiled files
+*.o
+*.so
+*.dll
+
+# Mac/Windows system files
+.DS_Store
+Thumbs.db
+
+# R package build files
+*.tar.gz
+
+# Personal notes
+*.log
+*.tmp
+
